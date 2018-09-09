@@ -1,0 +1,54 @@
+[
+    {
+	"os_api_name": "Nexus9-And60",
+	"browser_api_name": "MblChrome63"
+    },
+    {
+	"os_api_name": "Nexus6P-And70",
+        "browser_api_name": "MblChrome66"
+    },
+    {
+	"os_api_name": "GalaxyS7-And70",
+	"browser_api_name": "MblChrome67"    
+    },
+    {
+	"os_api_name": "GalaxyS6-And50",
+	"browser_api_name": "MblChrome62"
+    },
+    {
+	"os_api_name": "iPadPro-iOS9Sim",
+	"browser_api_name": "MblSafari9.0"
+    },
+    {
+	"os_api_name":  "iPadAir2-iOS9Sim",
+	"browser_api_name": "MblSafari9.0"
+    },
+    {
+	"os_api_name": "iPhoneX-iOS11",
+	"browser_api_name": "MblSafari11.0"
+    },
+    {
+	"os_api_name": "iPhone8-iOS11Sim",
+	"browser_api_name": "MblSafari11.0"
+    },
+    {
+	"os_api_name": "Mac10.13",
+	"browser_api_name": "Chrome62x64"
+    },
+    {
+	"os_api_name": "Mac10.13",
+        "browser_api_name": "Safari11"
+    },
+    {
+	"os_api_name": "Win10",
+        "browser_api_name": "Chrome43"	
+    },
+    {
+	"os_api_name": "Win10",
+	"browser_api_name": "IE11"
+    },
+    {
+	"os_api_name": "Win10",
+	"browser_api_name": "Edge17"
+    }    
+]

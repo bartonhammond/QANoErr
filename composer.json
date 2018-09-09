@@ -1,0 +1,35 @@
+{
+    "name": "bartonhammond/qanoerr-example",
+    "description": "starter template for QANoErr",
+    "type": "project",
+    "config": {
+	"bin-dir": "vendor/bin",
+	"process-timeout": 0,
+	"platform": {
+	    "php": "7.0.27"
+	}
+    },
+    "selenium-server": "vendor/bin/selenium-server-standalone  2>&1 | tee .\/selenium-server.log",    
+    "scripts": {
+	"behat-prep": "vendor/bin/preprocessGherkin",    
+	"behat":  "composer behat-prep && vendor/bin/behat --config behat.yml --colors",
+	"behat-cbt": "composer behat-prep && vendor/bin/buildCBTTests"
+    },
+    "require-dev": {
+	"wisnet/behatpom": "~0.0.1"
+    },
+    "repositories": [
+	{
+	    "type": "vcs",
+	    "url": "git@bitbucket.org:wisnet/behatpomchromeextension"
+	}
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,    
+    "autoload": {
+	"classmap": [
+	    "features",
+	    "vendor"
+	]
+    }    
+}

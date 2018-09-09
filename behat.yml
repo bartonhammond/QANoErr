@@ -1,0 +1,19 @@
+default:
+  suites:
+    home:
+      paths: ["%paths.base%/features/temp/loginForm.feature"]
+      contexts: [ProjectContext]
+     
+  extensions:
+    Behat\MinkExtension:
+      browser_name: 'chrome'
+      javascript_session: selenium2
+      selenium2:
+        wd_host: http://0.0.0.0:4444/wd/hub
+      base_url: http://crossbrowsertesting.github.io
+
+    SensioLabs\Behat\PageObjectExtension:
+      namespaces:
+        page: [pages]
+        element: [pages]
+

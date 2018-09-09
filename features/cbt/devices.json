@@ -1,0 +1,14 @@
+[
+    {
+	"os_api_name": "Nexus9-And60",
+	"browser_api_name": "MblChrome63"
+    },
+    {
+	"os_api_name": "Nexus6P-And70",
+        "browser_api_name": "MblChrome66"
+    },
+    {
+	"os_api_name": "GalaxyS7-And70",
+	"browser_api_name": "MblChrome67"    
+    }
+]

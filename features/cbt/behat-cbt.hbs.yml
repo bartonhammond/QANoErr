@@ -1,0 +1,37 @@
+default:
+  autoload:
+    '': "%paths.base%/../bootstrap"  
+  suites:
+    mobile:
+      paths: ["%paths.base%/../temp/<name>.feature"]
+      contexts:
+        - ProjectContext:
+            - {{build}}
+            - {{os_api_name}}
+            - {{browser_api_name}}
+
+  extensions:
+    Behat\MinkExtension:
+      default_session: selenium2
+      browser_name: chrome
+      base_url: http://crossbrowsertesting.github.io
+      selenium2:
+        #wd_host: http://localhost:4444/wd/hub
+        wd_host: https://<userid>%40<company.com>:<password>@crossbrowsertesting.com/wd/hub
+        capabilities:
+          extra_capabilities:
+            os_api_name: {{os_api_name}}
+            browser_api_name: {{browser_api_name}}
+            
+            build: 1.0.0
+            record_video: true
+            record_network: true
+            max_duration: 14400
+            new_command_timeout: 14400
+
+    SensioLabs\Behat\PageObjectExtension:
+      namespaces:
+        page: [pages]
+        element: [pages]
+
+
