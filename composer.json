@@ -9,8 +9,8 @@
 	    "php": "7.0.27"
 	}
     },
-    "selenium-server": "vendor/bin/selenium-server-standalone  2>&1 | tee .\/selenium-server.log",    
     "scripts": {
+	"selenium-server": "vendor/bin/selenium-server-standalone  2>&1 | tee .\/selenium-server.log",	
 	"behat-prep": "vendor/bin/preprocessGherkin",    
 	"behat":  "composer behat-prep && vendor/bin/behat --config behat.yml --colors",
 	"behat-cbt": "composer behat-prep && vendor/bin/buildCBTTests"
