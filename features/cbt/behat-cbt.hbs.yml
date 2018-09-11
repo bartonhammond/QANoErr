@@ -3,7 +3,7 @@ default:
     '': "%paths.base%/../bootstrap"  
   suites:
     mobile:
-      paths: ["%paths.base%/../temp/<name>.feature"]
+      paths: ["%paths.base%/../temp/loginForm.feature"]
       contexts:
         - ProjectContext:
             - {{build}}
@@ -17,7 +17,7 @@ default:
       base_url: http://crossbrowsertesting.github.io
       selenium2:
         #wd_host: http://localhost:4444/wd/hub
-        wd_host: https://<userid>%40<company.com>:<password>@crossbrowsertesting.com/wd/hub
+        wd_host: https://{{username}}:{{authkey}}@crossbrowsertesting.com/wd/hub
         capabilities:
           extra_capabilities:
             os_api_name: {{os_api_name}}
